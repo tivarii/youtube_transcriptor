@@ -12,7 +12,7 @@ app.use(helmet());
 
 // CORS configuration
 app.use(cors({
-  origin: config.corsOrigin,
+  origin: "*", // Allow all origins for development; adjust for production
   credentials: true,
 }));
 
